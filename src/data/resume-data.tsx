@@ -1,236 +1,198 @@
 import type { ResumeData } from "@/lib/types";
 
 export const RESUME_DATA: ResumeData = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
-  about: "Full Stack Engineer dedicated to building high-quality products.",
+  name: "Weiting Xia",
+  initials: "WX",
+  location: "Washington, DC, USA(Open to Relocate)",
+  locationLink: "https://www.google.com/maps/place/Washingtondc",
+  about: "Business & Data Analyst dedicated to turning data into actionable business insights and measurable impact.",
   summary: (
     <>
-      Full Stack Engineer specializing in high-performance React applications,
-      scalable Node.js services, and real-time collaboration systems.
-      Experienced in technical architecture design and remote team leadership.
+      Business Analytics & AI master’s student at Johns Hopkins University with 
+      hands-on experience in SQL, Python, and dashboarding, delivering data quality, 
+      forecasting, and operational insights across Apple, MUJI, and EY.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "/DSCF4747.JPG",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "weiting_xia@outlook.com",
+    tel: "+202-394-8273",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/Weiting-Xia?tab=repositories",
         icon: "github",
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/weiting-xia",
         icon: "linkedin",
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: "x",
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Johns Hopkins University",
+      degree: "Master of Science in Business Analytics and Artificial Intelligence",
+      start: "2025",
+      end: "2026",
+    },
+    {
+      school: "Shanghai University",
+      degree: "Bachelor of Arts in Finance",
+      start: "2021",
+      end: "2025",
     },
   ],
   work: [
     {
-      company: "Motion",
-      link: "https://motionapp.com/",
-      badges: ["Remote", "AI", "React", "Next.js", "TypeScript", "AdonisJS"],
-      title: "Senior Software Engineer",
-      start: "2025",
-      end: null,
+      company: "Apple Inc.",
+      link: "https://www.apple.com",
+      badges: ["SQL", "Tableau", "ETL","Data Automation","Anomaly Detection"],
+      title: "Global Data Analyst Intern",
+      start: "Jan 2025",
+      end: "Jul 2025",
       description: (
         <>
-          Working on internal AI agents platform allowing marketing specialists
-          to create AI workflows.
-        </>
-      ),
-    },
-    {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
-      start: "2024",
-      end: "2025",
-      description: (
-        <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
+          Developed a SQL-Based automated ETL for finance operations optimization.
           <ul className="list-inside list-disc">
             <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
+              SQL ETL & Data Integration (CTEs, JOINs, Window Functions) 
+              for large-scale billing and invoice reconciliation
             </li>
             <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
+              Data Quality Monitoring & Anomaly Detection with automated 
+              alerts to improve finance operational accuracy
             </li>
             <li>
-              Implementing system-wide monitoring and security improvements
+              Tableau BI Dashboards & KPI Analytics
+              for invoice turnaround, posting performance, and stakeholder reporting
+            </li>
+          </ul>
+        </>
+      ),
+      images: ["/Screenshot 2026-01-18 at 01.49.49.png", "/Screenshot 2026-01-18 at 01.51.14.png"],
+    },
+    {
+      company: "MUJI",
+      link: "https://www.muji.us",
+      badges: ["Python", "Power BI", "Demand Forecasting", "Time Series Analysis"],
+      title: "Business Analyst Intern",
+      start: "Jul 2024",
+      end: "Dec 2024",
+      description: (
+        <>
+          Developing a data forecasting model for supply chain operations.
+          <ul className="list-inside list-disc">
+            <li>
+              Built Python-based demand 
+              forecasting models (Seasonal ES) achieving 5% MAPE across 100+ products
+            </li>
+            <li>
+              Automated stockout and inventory tracking 
+              using Python (Pandas) and Power BI, improving forecast accuracy to 72%
+            </li>
+            <li>
+              Applied logistic regression for 
+              customer segmentation on 1K+ social data points, reducing manual analysis by 50%
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
+      company: "EY",
+      link: "https://www.ey.com/en_us",
       badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
+        "SQL",
+        "Power BI",
+        "Reporting Automation",
+        "Data Quality Validation"
       ],
-      title: "Senior Full Stack Developer",
-      start: "2021",
-      end: "2024",
+      title: "Data Analyst Intern",
+      start: "Apr 2024",
+      end: "Jun 2024",
       description: (
         <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
+          Delivered data quality validation and risk monitoring solutions.
           <ul className="list-inside list-disc">
             <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
+              Supported data quality and
+               risk validation using SQL rule-based checks to identify and flag risk issues.
             </li>
             <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
+              Automated SQL reporting 
+              pipelines with CTEs and Power BI dashboards, saving 2 hours/week in review time.
             </li>
             <li>
-              Open source contributions to Relay DevTools and React i18n tooling
+              Built Power BI dashboards for real-time fraud and AML risk monitoring.
             </li>
           </ul>
         </>
       ),
-    },
-    {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      start: "2015",
-      end: "2021",
-      description: (
-        <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
-          <ul className="list-inside list-disc">
-            <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
-            </li>
-            <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
-            </li>
-            <li>
-              Led development teams across multiple successful client projects
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      start: "2012",
-      end: "2015",
-      description: (
-        <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
-          <ul className="list-inside list-disc">
-            <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
-            </li>
-            <li>Built and mentored high-performing mobile development team</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
     },
   ],
   skills: [
-    "React/Next.js/Remix",
-    "TypeScript",
-    "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
+    "SQL",
+    "Python",
+    "Tableau",
+    "Power BI",
+    "Excel (Pivot Table, VBA Macros, Power Query)",
+    "R",
+    "Google Analytics",
+    "Linear Regression",
+    "Logistic Regression",
+    "XGBoost",
+    "A/B testing",
+    "K-Means",
+    "PCA"
   ],
   projects: [
     {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+      title: "Global Apple Repair Dashboard",
+      techStack: ["Tableau", "Python","Data Cleaning","Trend Analysis","Hypothesis Testing"],
       description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
+        "Integrated 160K+ global sales and repair records in Python and built Tableau dashboards to analyze return patterns, revealing that returns account for ~2% of annual sales and are concentrated in iPhone products with a clear seasonal peak in August.",
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        label: "Global Apple Repair Dashboard Creation",
+        href: "https://public.tableau.com/shared/Y8MFDH5QJ?:display_count=n&:origin=viz_share_link",
       },
     },
     {
-      title: "Consultly",
+      title: "Inventory Optimization and Replenishment Analysis(Python)",
+      techStack: ["Python", "Data Cleaning", "Cost–Benefit Analysis", "Capacity Planning","Demand Forecasting"],
+      description:
+        "Conducted an inventory optimization and replenishment analysis to identify cost-saving ordering strategies, optimal purchase timing, and the financial feasibility of capacity expansion.",
+      link: {
+        label: "Inventory Optimization and Replenishment Analysis(Python)",
+        href: "https://github.com/Weiting-Xia/Inventory-Optimization-and-Replenishment-Analysis-",
+      },
+    },
+    {
+      title: "User Profiling Analysis (Machine Learning)",
       techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
+        "Python",
+        "Logistic Regression",
+        "PCA",
+        "K-Means Clustering",
+        "Discriminant Analysis",
+        "Collaborative Filtering"
       ],
       description:
-        "Platform for online consultations with real-time video meetings and scheduling",
+        "Applied machine learning–based user profiling to analyze IdleFish’s green marketing campaign, and propose targeted, incentive-driven strategies to improve engagement and support sustainable growth.",
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "User Profiling Analysis (Machine Learning)",
+        href: "https://github.com/Weiting-Xia/User-Profiling-Analysis-Machine-Learning",
       },
     },
     {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
+      title: "RedNote LandingLift A/B Test",
+      techStack: ["Python", "A/B Testing", "Statistical Analysis","Hypothesis Testing"],
       description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
+        "Conducted a Python-based A/B test for RedNote to evaluate whether a redesigned landing page could improve conversion rates from 12% to a targeted 15% prior to full launch",
       link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
+        label: "RedNote LandingLift A/B Test",
+        href: "https://github.com/Weiting-Xia/RedNote-LandingLift-A-B-Test",
       },
     },
   ],

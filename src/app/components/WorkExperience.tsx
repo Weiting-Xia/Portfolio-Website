@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
 import type { RESUME_DATA } from "@/data/resume-data";
 import { cn } from "@/lib/utils";
+import NextImage from "next/image";
 
 type WorkExperience = (typeof RESUME_DATA)["work"][number];
 type WorkBadges = readonly string[];
@@ -100,7 +101,7 @@ interface WorkExperienceItemProps {
 function WorkExperienceItem({
   work,
 }: WorkExperienceItemProps) {
-  const { company, link, badges, title, start, end, description } = work;
+  const { company, link, badges, title, start, end, description, images} = work;
 
   return (
     <Card className="py-1 print:py-0">
@@ -108,10 +109,6 @@ function WorkExperienceItem({
         <div className="flex items-center justify-between gap-x-2 text-base">
           <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none print:text-sm">
             <CompanyLink company={company} link={link} />
-            <BadgeList
-              className="hidden gap-x-1 sm:inline-flex"
-              badges={badges}
-            />
           </h3>
           <WorkPeriod start={start} end={end} />
         </div>
@@ -122,16 +119,39 @@ function WorkExperienceItem({
       </CardHeader>
 
       <CardContent>
-        <div className="mt-2 text-xs text-foreground/80 print:mt-1 print:text-[10px] text-pretty">
-          {description}
+      {/* Description */}
+      <div className="mt-2 text-xs text-foreground/80 print:mt-1 print:text-[10px] text-pretty">
+        {description}
+      </div>
+
+      {/* Badges — 单独一行 */}
+      <div className="mt-3">
+        <BadgeList
+          className="flex flex-wrap gap-1"
+          badges={badges}
+        />
+      </div>
+
+      {/* Images — badge 下方，一行最多三张 */}
+      {images && images.length > 0 && (
+        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {images.slice(0, 3).map((src, idx) => (
+            <div
+              key={idx}
+              className="relative aspect-[16/9] overflow-hidden rounded-md"
+            >
+              <NextImage
+                src={src}
+                alt={`${company} project screenshot ${idx + 1}`}
+                fill
+                className="object-contain"
+              />
+            </div>
+          ))}
         </div>
-        <div className="mt-2">
-          <BadgeList
-            className="-mx-2 flex-wrap gap-1 sm:hidden"
-            badges={badges}
-          />
-        </div>
-      </CardContent>
+      )}
+    </CardContent>
+
     </Card>
   );
 }
