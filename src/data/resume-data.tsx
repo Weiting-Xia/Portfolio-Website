@@ -5,6 +5,7 @@ export const RESUME_DATA: ResumeData = {
   initials: "WX",
   location: "Washington, DC, USA(Open to Relocate)",
   locationLink: "https://www.google.com/maps/place/Washingtondc",
+  personalWebsiteUrl: "https://github.com/Weiting-Xia?tab=repositories",
   about: "Business & Data Analyst dedicated to turning data into actionable business insights and measurable impact.",
   summary: (
     <>

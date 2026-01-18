@@ -36,6 +36,7 @@ export interface ResumeData {
     start: string;
     end: string | null;
     description: string | React.ReactNode;
+    images?: string[];
   }>;
   skills: string[];
   projects: Array<{
