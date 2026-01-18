@@ -3,9 +3,9 @@ import type { ResumeData } from "@/lib/types";
 export const RESUME_DATA: ResumeData = {
   name: "Weiting Xia",
   initials: "WX",
-  location: "Washington, DC, USA(Open to Relocate)",
+  location: "Washington, DC, USA (Open to Relocate)",
   locationLink: "https://www.google.com/maps/place/Washingtondc",
-  personalWebsiteUrl: "https://github.com/Weiting-Xia?tab=repositories",
+  personalWebsiteUrl: "https://weiting-xia.vercel.app",
   about: "Business & Data Analyst dedicated to turning data into actionable business insights and measurable impact.",
   summary: (
     <>
@@ -72,7 +72,10 @@ export const RESUME_DATA: ResumeData = {
           </ul>
         </>
       ),
-      images: ["/Screenshot 2026-01-18 at 01.49.49.png", "/Screenshot 2026-01-18 at 01.51.14.png"],
+      images: [
+        "/Screenshot 2026-01-18 at 01.49.49.png",
+         "/Screenshot 2026-01-18 at 01.51.14.png"
+        ],
     },
     {
       company: "MUJI",
@@ -100,6 +103,10 @@ export const RESUME_DATA: ResumeData = {
           </ul>
         </>
       ),
+      images: [
+        "/Picture1.png",
+         "/Picture2.png"
+        ],
     },
     {
       company: "EY",
@@ -150,7 +157,7 @@ export const RESUME_DATA: ResumeData = {
   ],
   projects: [
     {
-      title: "Global Apple Repair Dashboard",
+      title: "Global Apple Repair Dashboard (Tableau)",
       techStack: ["Tableau", "Python","Data Cleaning","Trend Analysis","Hypothesis Testing"],
       description:
         "Integrated 160K+ global sales and repair records in Python and built Tableau dashboards to analyze return patterns, revealing that returns account for ~2% of annual sales and are concentrated in iPhone products with a clear seasonal peak in August.",
@@ -187,7 +194,7 @@ export const RESUME_DATA: ResumeData = {
       },
     },
     {
-      title: "RedNote LandingLift A/B Test",
+      title: "RedNote LandingLift A/B Test (Python)",
       techStack: ["Python", "A/B Testing", "Statistical Analysis","Hypothesis Testing"],
       description:
         "Conducted a Python-based A/B test for RedNote to evaluate whether a redesigned landing page could improve conversion rates from 12% to a targeted 15% prior to full launch",
