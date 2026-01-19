@@ -46,7 +46,6 @@ export const RESUME_DATA: ResumeData = {
       start: "2021",
       end: "2025",
       gpa: "3.84/4.0",
-      badge: "First Prize Scholarship",
     },
   ],
   work: [
