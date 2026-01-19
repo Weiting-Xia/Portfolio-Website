@@ -37,12 +37,16 @@ export const RESUME_DATA: ResumeData = {
       degree: "Master of Science in Business Analytics and Artificial Intelligence",
       start: "2025",
       end: "2026",
+      gpa: "3.76/4.0",
+      badge: "Dean’s Scholarship",
     },
     {
       school: "Shanghai University",
       degree: "Bachelor of Arts in Finance",
       start: "2021",
       end: "2025",
+      gpa: "3.84/4.0",
+      badge: "First Prize Scholarship",
     },
   ],
   work: [

@@ -2,6 +2,9 @@ import React from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
 import type { RESUME_DATA } from "@/data/resume-data";
+import { Badge } from "@/components/ui/badge";
+
+
 
 type Education = (typeof RESUME_DATA)["education"][number];
 
@@ -32,28 +35,47 @@ interface EducationItemProps {
  * Individual education card component
  */
 function EducationItem({ education }: EducationItemProps) {
-  const { school, start, end, degree } = education;
+  const { school, start, end, degree, gpa } = education;
 
   return (
     <Card>
       <CardHeader>
         <div className="flex items-center justify-between gap-x-2 text-base">
-          <h3
-            className="font-semibold leading-none"
-            id={`education-${school.toLowerCase().replace(/\s+/g, "-")}`}
-          >
-            {school}
-          </h3>
+          {/* 左侧：学校名 + Badge */}
+          <div className="flex items-center gap-x-2">
+            <h3
+              className="font-semibold leading-none"
+              id={`education-${school.toLowerCase().replace(/\s+/g, "-")}`}
+            >
+              {school}
+            </h3>
+
+            {education.badge && (
+              <Badge
+                variant="secondary"
+                className="rounded-full px-2 py-1 text-xs font-mono font-semibold leading-tight"
+              >
+                {education.badge}
+              </Badge>
+            )}
+          </div>
+          {/* 右侧：时间 */}
           <EducationPeriod start={start} end={end} />
         </div>
       </CardHeader>
+
       <CardContent
         className="mt-2 text-foreground/80 print:text-[12px]"
         aria-labelledby={`education-${school
           .toLowerCase()
           .replace(/\s+/g, "-")}`}
       >
-        {degree}
+       <div>{degree}</div>
+      {gpa && (
+        <div className="mt-1 text-xs">
+          GPA: {gpa}
+        </div>
+      )}
       </CardContent>
     </Card>
   );

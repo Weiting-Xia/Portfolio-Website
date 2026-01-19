@@ -27,6 +27,8 @@ export interface ResumeData {
     degree: string;
     start: string;
     end: string;
+    gpa?: string;
+    badge?: string;
   }>;
   work: Array<{
     company: string;
