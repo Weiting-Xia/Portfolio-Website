@@ -53,7 +53,7 @@ function EducationItem({ education }: EducationItemProps) {
             {education.badge && (
               <Badge
                 variant="secondary"
-                className="rounded-full px-2 py-1 text-xs font-mono font-semibold leading-tight"
+                className="rounded-md px-1 py-0.5 text-xs font-mono font-semibold leading-tight"
               >
                 {education.badge}
               </Badge>

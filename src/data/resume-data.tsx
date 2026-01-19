@@ -17,7 +17,7 @@ export const RESUME_DATA: ResumeData = {
   avatarUrl: "/DSCF4747.JPG",
   contact: {
     email: "weiting_xia@outlook.com",
-    tel: "+202-394-8273",
+    tel: "+1-202-394-8273",
     social: [
       {
         name: "GitHub",
