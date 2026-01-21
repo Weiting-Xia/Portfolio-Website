@@ -180,7 +180,7 @@ export const RESUME_DATA: ResumeData = {
       },
     },
     {
-      title: "User Profiling Analysis (Machine Learning)",
+      title: "Data-Driven User Engagement Optimization in Green Marketing (Machine Learning)",
       techStack: [
         "Python",
         "Logistic Regression",
