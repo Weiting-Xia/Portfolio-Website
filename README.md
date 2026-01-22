@@ -1,2 +1,3 @@
-[![CV Preview](/Weiting Xia - Resume.png)](https://weiting-xia.vercel.app)
+[![CV Preview](Weiting%20Xia%20-%20Resume.png)](https://weiting-xia.vercel.app)
+
 
