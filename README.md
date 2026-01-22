@@ -1,3 +1,3 @@
-[![CV Preview](Personal-Website.png)](https://weiting-xia.vercel.app)
+[![CV Preview](Personal-Website-new.png)](https://weiting-xia.vercel.app)
 
 
