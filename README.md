@@ -1,2 +1,2 @@
-[![CV Preview](Personal%20Website.png)](Personal%20Website.pdf)
+[![CV Preview](/Weiting Xia - Resume.png)](https://weiting-xia.vercel.app)
 
