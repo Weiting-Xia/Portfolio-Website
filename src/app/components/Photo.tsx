@@ -59,18 +59,24 @@ const Photo = ({
 
 export const Photos = () => {
   return (
-    <div className="my-8">
-      <div className="hide-scrollbar -my-4 flex gap-8 overflow-y-auto py-4 px-8">
-        {travelImages.map((travelImage, index) => (
-          <Photo
-            key={travelImage.img.src}
-            img={travelImage.img}
-            title={travelImage.title}
-            alt={travelImage.alt}
-            idx={index}
-          />
-        ))}
+    <section className="my-10">
+      {/* Full-bleed photo strip */}
+      <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen">
+        <div
+          className="hide-scrollbar flex gap-8 overflow-x-auto py-4 px-8 scroll-smooth"
+          style={{ WebkitOverflowScrolling: "touch" }}
+        >
+          {travelImages.map((travelImage, index) => (
+            <Photo
+              key={travelImage.img.src}
+              img={travelImage.img}
+              title={travelImage.title}
+              alt={travelImage.alt}
+              idx={index}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
