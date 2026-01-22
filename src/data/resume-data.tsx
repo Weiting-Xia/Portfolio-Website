@@ -6,7 +6,7 @@ export const RESUME_DATA: ResumeData = {
   location: "Washington, DC, USA (Open to Relocate)",
   locationLink: "https://www.google.com/maps/place/Washingtondc",
   personalWebsiteUrl: "https://weiting-xia.vercel.app",
-  about: "I thought I wanted to be an analyst for the title, but I realized I just enjoy building dashboards and working with data.",
+  about: "I thought I wanted to be an analyst for the title, but I realized I simply enjoy building dashboards and working with data.",
   summary: (
     <>
       Business Analytics & AI master’s student at Johns Hopkins University with 

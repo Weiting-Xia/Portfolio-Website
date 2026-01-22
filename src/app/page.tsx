@@ -16,10 +16,10 @@ import { Photos } from "./components/Photo";
 
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} - Resume`,
+  title: `${RESUME_DATA.name}`,
   description: RESUME_DATA.about,
   openGraph: {
-    title: `${RESUME_DATA.name} - Resume`,
+    title: `${RESUME_DATA.name}`,
     description: RESUME_DATA.about,
     type: "profile",
     locale: "en_US",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${RESUME_DATA.name} - Resume`,
+    title: `${RESUME_DATA.name}`,
     description: RESUME_DATA.about,
     images: ["https://cv.jarocki.me/opengraph-image"],
   },
