@@ -21,7 +21,7 @@ export const RESUME_DATA: ResumeData = {
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/Weiting-Xia?tab=repositories",
+        url: "https://github.com/Weiting-Xia",
         icon: "github",
       },
       {
