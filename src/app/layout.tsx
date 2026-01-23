@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cv.jarocki.me"),
+  metadataBase: new URL(RESUME_DATA.personalWebsiteUrl),
   title: {
     default: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
     template: `%s | ${RESUME_DATA.name}`,
@@ -38,14 +38,29 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png" }],
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: RESUME_DATA.personalWebsiteUrl,
-    siteName: `${RESUME_DATA.name}'s CV`,
+    siteName: RESUME_DATA.name,
     title: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
     description: RESUME_DATA.about,
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
+      },
+    ],
   },
+
   robots: {
     index: true,
     follow: true,
@@ -57,11 +72,12 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  twitter: {
+   twitter: {
     card: "summary_large_image",
     title: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
     description: RESUME_DATA.about,
     creator: "@WeitingXia",
+    images: ["/og.png"],
   },
   alternates: {
     canonical: RESUME_DATA.personalWebsiteUrl,
@@ -87,8 +103,8 @@ export default function RootLayout({
     <html lang="en" className={inter.className}>
       <body>
         <ErrorBoundary>{children}</ErrorBoundary>
+        <Analytics />
       </body>
-      <Analytics />
     </html>
   );
 }
