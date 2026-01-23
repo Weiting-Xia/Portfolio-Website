@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
     description: RESUME_DATA.about,
-    creator: "@BartoszJarocki",
+    creator: "@WeitingXia",
   },
   alternates: {
     canonical: RESUME_DATA.personalWebsiteUrl,
