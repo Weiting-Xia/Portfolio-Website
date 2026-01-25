@@ -80,7 +80,6 @@ export const RESUME_DATA: ResumeData = {
         "/Screenshot 2026-01-18 at 01.49.49.png",
          "/Screenshot 2026-01-18 at 01.51.14.png",
         ],
-      imageLayout: "etl-focus",
     },
     {
       company: "MUJI",
