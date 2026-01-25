@@ -132,24 +132,41 @@ function WorkExperienceItem({
         />
       </div>
 
-      {/* Images — badge 下方，一行最多三张 */}
+     {/* Images */}
       {images && images.length > 0 && (
-        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {images.slice(0, 3).map((src, idx) => (
-            <div
-              key={idx}
-              className="relative aspect-[16/9] overflow-hidden rounded-md"
-            >
-              <NextImage
-                src={src}
-                alt={`${company} project screenshot ${idx + 1}`}
-                fill
-                className="object-contain"
-              />
-            </div>
-          ))}
+        <div
+          className={cn(
+            "mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3",
+            company === "Apple Inc." && "mt-2"
+          )}
+        >
+          {images.slice(0, 3).map((src, idx) => {
+            const isApple = company === "Apple Inc.";
+            const isFirst = idx === 0;
+
+            return (
+              <div
+                key={src}
+                className={cn(
+                  "relative overflow-hidden rounded-md",
+                  isApple && isFirst
+                    ? "sm:col-span-2 h-[140px] sm:h-[180px]"
+                    : "aspect-[16/9]"
+                )}
+              >
+                <NextImage
+                  src={src}
+                  alt={`${company} project screenshot ${idx + 1}`}
+                  fill
+                  sizes={isApple && isFirst ? "100vw" : "(min-width: 640px) 50vw, 100vw"}
+                  className="object-contain"
+                />
+              </div>
+            );
+          })}
         </div>
       )}
+
     </CardContent>
 
     </Card>

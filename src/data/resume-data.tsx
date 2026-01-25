@@ -52,33 +52,35 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "Apple Inc.",
       link: "https://www.apple.com",
-      badges: ["SQL", "Tableau", "ETL","Data Automation","Anomaly Detection"],
+      badges: ["SQL", "Python","Tableau", "ETL","Anomaly Detection"],
       title: "Global Data Analyst Intern",
       start: "Jan 2025",
       end: "Jul 2025",
       description: (
         <>
-          Developed a SQL-Based automated ETL for finance operations optimization.
+          Analyzed 40K+ payment records over 3 years using SQL, Python, and Tableau to identify regional invoice risks, automate data-quality validation, and support on-time financial close
           <ul className="list-inside list-disc">
             <li>
-              SQL ETL & Data Integration (CTEs, JOINs, Window Functions) 
-              for large-scale billing and invoice reconciliation
+              Processed 40K+ payment and invoice records using SQL and Python for analytics
             </li>
             <li>
-              Data Quality Monitoring & Anomaly Detection with automated 
-              alerts to improve finance operational accuracy
+              Identified regional invoice risks through Python-based geographic and EDA analysis
             </li>
             <li>
-              Tableau BI Dashboards & KPI Analytics
-              for invoice turnaround, posting performance, and stakeholder reporting
+              Built a Tableau dashboard to automate month-end risk and performance monitoring
+            </li>
+             <li>
+              Impact: +33% data reliability, −20% coordination effort, supporting on-time R2R close
             </li>
           </ul>
         </>
       ),
       images: [
+        "/Pasted Graphic 3.png",
         "/Screenshot 2026-01-18 at 01.49.49.png",
-         "/Screenshot 2026-01-18 at 01.51.14.png"
+         "/Screenshot 2026-01-18 at 01.51.14.png",
         ],
+      imageLayout: "etl-focus",
     },
     {
       company: "MUJI",
@@ -89,20 +91,21 @@ export const RESUME_DATA: ResumeData = {
       end: "Dec 2024",
       description: (
         <>
-          Developing a data forecasting model for supply chain operations.
+          Built an automated demand forecasting system on 45K+ SKU-level sales records (15 months) using SQL, Python, and Power BI to improve planning accuracy and drive sales growth
           <ul className="list-inside list-disc">
             <li>
-              Built Python-based demand 
-              forecasting models (Seasonal ES) achieving 5% MAPE across 100+ products
+              Processed 45K+ SKU-level sales and inventory records using SQL and Python
             </li>
             <li>
-              Automated stockout and inventory tracking 
-              using Python (Pandas) and Power BI, improving forecast accuracy to 72%
+              Assessed demand stability with CV metrics and applied rolling averages for volatile SKUs
             </li>
             <li>
-              Applied logistic regression for 
-              customer segmentation on 1K+ social data points, reducing manual analysis by 50%
+              Built Holt–Winters forecasts (~12% MAPE) to support monthly sales planning with Ops
             </li>
+            <li>
+              Developed a Power BI dashboard to monitor forecast accuracy, stockout risk, and sales progress
+            </li>
+              Impact: 87% full fulfillment, +26% in-store sales, eliminated manual forecasting
           </ul>
         </>
       ),
@@ -115,32 +118,37 @@ export const RESUME_DATA: ResumeData = {
       company: "EY",
       link: "https://www.ey.com/en_us",
       badges: [
-        "SQL",
+        "Python",
         "Power BI",
-        "Reporting Automation",
-        "Data Quality Validation"
+        "K-means",
+        "Multivariate Regression"
       ],
       title: "Data Analyst Intern",
       start: "Apr 2024",
       end: "Jun 2024",
       description: (
         <>
-          Delivered data quality validation and risk monitoring solutions.
+          Analyzed and segmented 2K+ EV user survey data using Python o uncover design-preference drivers and deliver actionable, segment-specific insights to the client
           <ul className="list-inside list-disc">
             <li>
-              Supported data quality and
-               risk validation using SQL rule-based checks to identify and flag risk issues.
+              Cleaned and processed 2K+ EV user survey data using Python
             </li>
             <li>
-              Automated SQL reporting 
-              pipelines with CTEs and Power BI dashboards, saving 2 hours/week in review time.
+              Segmented customers into tech-oriented vs. luxury-oriented groups with K-means
             </li>
             <li>
-              Built Power BI dashboards for real-time fraud and AML risk monitoring.
+              Identified key design-preference drivers via multivariate regression
+            </li>
+             <li>
+              Delivered segment-level insights to support targeted customer profiling and decisions
             </li>
           </ul>
         </>
       ),
+      images: [
+        "/Overall Preference Ranking.png",
+        "/11111.png",
+        ],
     },
   ],
   skills: [
