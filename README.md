@@ -1,3 +1,3 @@
-[![CV Preview](Weiting Xia_Portfolio.png)](https://weiting-xia.vercel.app)
+[![CV Preview](Weiting-Xia-Portfolio.png)](https://weiting-xia.vercel.app)
 
 
