@@ -61,10 +61,10 @@ export const RESUME_DATA: ResumeData = {
           Analyzed 40K+ payment records over 3 years using SQL, Python, and Tableau to identify regional invoice risks, automate data-quality validation, and support on-time financial close
           <ul className="list-inside list-disc">
             <li>
-              Processed 40K+ payment and invoice records using SQL and Python for analytics
+              Extracted and Cleaned 40K+ payment and invoice records using SQL for analytics
             </li>
             <li>
-              Identified regional invoice risks through Python-based geographic and EDA analysis
+              Identified regional operation risks through Python-based geographic and EDA analysis
             </li>
             <li>
               Built a Tableau dashboard to automate month-end risk and performance monitoring
@@ -93,10 +93,10 @@ export const RESUME_DATA: ResumeData = {
           Built an automated demand forecasting system on 45K+ SKU-level sales records (15 months) using SQL, Python, and Power BI to improve planning accuracy and drive sales growth
           <ul className="list-inside list-disc">
             <li>
-              Processed 45K+ SKU-level sales and inventory records using SQL and Python
+              Extracted and processed 45K+ SKU-level sales and inventory records using SQL
             </li>
             <li>
-              Assessed demand stability with CV metrics and applied rolling averages for volatile SKUs
+              Utilized Python to analyze demand stability and select products with stable and sufficient demand for modeling
             </li>
             <li>
               Built Holt–Winters forecasts (~12% MAPE) to support monthly sales planning with Ops
@@ -104,7 +104,7 @@ export const RESUME_DATA: ResumeData = {
             <li>
               Developed a Power BI dashboard to monitor forecast accuracy, stockout risk, and sales progress
             </li>
-              Impact: 87% full fulfillment, +26% in-store sales, eliminated manual forecasting
+              Impact: 87% full fulfillment, +26% pilot in-store sales, eliminated manual forecasting
           </ul>
         </>
       ),
@@ -127,19 +127,16 @@ export const RESUME_DATA: ResumeData = {
       end: "Jun 2024",
       description: (
         <>
-          Analyzed and segmented 2K+ EV user survey data using Python o uncover design-preference drivers and deliver actionable, segment-specific insights to the client
+          Analyzed and segmented 200K+ EV customer preference data  using Python o uncover design-preference drivers and deliver actionable, segment-specific insights to the client
           <ul className="list-inside list-disc">
             <li>
-              Cleaned and processed 2K+ EV user survey data using Python
+              Segmented customers into technology focused segment  vs. luxury focused segment with K-means
             </li>
             <li>
-              Segmented customers into tech-oriented vs. luxury-oriented groups with K-means
-            </li>
-            <li>
-              Identified key design-preference drivers via multivariate regression
+              Identified key design-preference drivers among the 2 segments via multivariate regression
             </li>
              <li>
-              Delivered segment-level insights to support targeted customer profiling and decisions
+              Delivered segment-level insights to support advertising decisions that increased conversion rates by 13%
             </li>
           </ul>
         </>
