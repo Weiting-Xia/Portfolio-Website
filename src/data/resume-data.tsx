@@ -37,7 +37,7 @@ export const RESUME_DATA: ResumeData = {
       degree: "Master of Science in Business Analytics and Artificial Intelligence",
       start: "2025",
       end: "2026",
-      gpa: "3.76/4.0",
+      gpa: "3.71/4.0",
       badge: "Dean’s Scholarship",
     },
     {
@@ -52,13 +52,13 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "Apple Inc.",
       link: "https://www.apple.com",
-      badges: ["SQL", "Python","Tableau", "ETL","Anomaly Detection"],
+      badges: ["SQL", "Python","Tableau", "Issue Tracking Automation","Cross-functional Collaboration"],
       title: "Global Data Analyst Intern",
       start: "Jan 2025",
       end: "Jul 2025",
       description: (
         <>
-          Analyzed 40K+ payment records over 3 years using SQL, Python, and Tableau to identify regional invoice risks, automate data-quality validation, and support on-time financial close
+          Analyzed 40K+ payment records over 3 years using SQL, Python, and Tableau to automate issue tracking process, and support on-time financial close
           <ul className="list-inside list-disc">
             <li>
               Extracted and Cleaned 40K+ payment and invoice records using SQL from Snowflake
@@ -84,13 +84,13 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "MUJI",
       link: "https://www.muji.us",
-      badges: ["Python", "Power BI", "Demand Forecasting", "Time Series Analysis"],
+      badges: ["Python", "Power BI", "Demand Forecasting Pipeline", "Time Series Analysis"],
       title: "Business Analyst Intern",
       start: "Jul 2024",
       end: "Dec 2024",
       description: (
         <>
-          Built an automated demand forecasting system on 45K+ SKU-level sales records (15 months) using SQL, Python, and Power BI to improve planning accuracy and drive sales growth
+          Built an automated demand forecasting system on 45K+ SKU-level sales records (15 months) using Python, and Power BI to improve inventory planning accuracy and drive sales growth
           <ul className="list-inside list-disc">
             <li>
               Extracted and processed 45K+ SKU-level sales and inventory records using SQL
@@ -212,7 +212,7 @@ export const RESUME_DATA: ResumeData = {
       },
     },
     {
-      title: "RedNote LandingLift A/B Test (Python)",
+      title: "RedNote LandingLift A/B Testing (Python)",
       techStack: ["Python", "A/B Testing", "Statistical Analysis","Hypothesis Testing"],
       description:
         "Conducted a Python-based A/B test for RedNote to evaluate whether a redesigned landing page could improve conversion rates from 12% to a targeted 15% prior to full launch",
