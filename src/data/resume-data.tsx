@@ -155,14 +155,25 @@ export const RESUME_DATA: ResumeData = {
     "Excel (Pivot Table, VBA Macros, Power Query)",
     "R",
     "Google Analytics",
-    "Linear Regression",
+    "AWS",
     "Logistic Regression",
-    "XGBoost",
+    "Clustering",
     "A/B testing",
     "K-Means",
-    "PCA"
+    "Neural Networks",
+    "NLP"
   ],
   projects: [
+    {
+      title: "AARP Content Gap Analysis & Digital Content Strategy Project",
+      techStack: ["Databrick", "Python","NLP","Topic Modeling(BERTopic)","Content Analysis","A/B Testing"],
+      description:
+        "Integrated 10K+ historical content records in Python and apply topic modeling to identify content gaps between AARP and mainstream media, found that the largest content gaps were in politics and entertainment.",
+      link: {
+        label: "AARP Content Gap Analysis & Digital Content Strategy Project",
+        href: "https://github.com/Weiting-Xia/Content-Gap-Analysis-Digital-Content-Strategy-Project",
+      },
+    },
     {
       title: "Global Apple Repair Dashboard (Tableau)",
       techStack: ["Tableau", "Python","Data Cleaning","Trend Analysis","Hypothesis Testing"],
