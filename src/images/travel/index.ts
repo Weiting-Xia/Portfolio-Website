@@ -19,11 +19,11 @@ import Pittsburg2 from './Pittsburgh2.jpeg';
 import Sanya from './Sanya.jpeg';
 import Sanya2 from './Sanya2.jpeg';
 import Shanghai from './Shanghai.jpeg';
-import Suzhou from './Suzhou.jpeg';
+import TidalBasin from './Tidal-Basin.jpeg';
 import Trenton from './Trenton.jpeg';
 import Washington2 from './Washington2.jpeg';
 import Xiamen from './Xiamen.jpeg';
-import Shanghai2 from './Shanghai2.jpeg';
+import NiagaraFalls from './Niagara-Falls.jpeg';
 import HighSchool from './High-School.jpeg';
 import Nanjing from './Nanjing.jpeg';
 import Qinhuangdao from './Qinhuangdao.jpeg';
@@ -44,7 +44,7 @@ export const travelImages = [
   { img: Dubai, title: 'Dubai, UAE', alt: 'Picture taken in Dubai, UAE' },
   { img: Newyork, title: 'New York, USA', alt: 'Picture taken in New York, USA' },
   { img: Newyork2, title: 'New York, USA', alt: 'Picture taken in New York, USA' },
-  { img: Shanghai2, title: 'Shanghai, China', alt: 'Picture taken in Shanghai, China' },
+  { img: TidalBasin, title: 'Tidal-Basin, DC', alt: 'Picture taken in DC, USA' },
   { img: Annapolis, title: 'Annapolis, USA', alt: 'Picture taken in Annapolis, USA' },
   { img: Myappartment, title: 'My Appartment, USA', alt: 'Picture taken in My appartment, USA' },
   { img: Neworlean, title: 'Neworlean, USA', alt: 'Picture taken in Neworlean, USA' },
@@ -54,7 +54,7 @@ export const travelImages = [
   { img: Sanya2, title: 'Sanya, China', alt: 'Picture taken in Sanya, China' },
   { img: Qinhuangdao, title: 'Qinhuangdao, China', alt: 'Picture taken in Qinhuangdao, China' },
   { img: Shanghai, title: 'Shanghai, China', alt: 'Picture taken in Shanghai, China' },
-  { img: Suzhou, title: 'Suzhou, China', alt: 'Picture taken in Suzhou, China' },
+  { img: NiagaraFalls, title: 'Niagara-Falls, NY', alt: 'Picture taken in New York State, USA' },
   { img: Trenton, title: 'Trenton, USA', alt: 'Picture taken in Trenton, USA' },
   { img: Washington2, title: 'Washington, USA', alt: 'Picture taken in Washington, USA' },
   { img: Xiamen, title: 'Xiamen, China', alt: 'Picture taken in Xiamen, China' },
