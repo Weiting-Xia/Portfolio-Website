@@ -61,13 +61,13 @@ export const RESUME_DATA: ResumeData = {
           Analyzed 40K+ payment records over 3 years using SQL, Python, and Tableau to identify regional invoice risks, automate data-quality validation, and support on-time financial close
           <ul className="list-inside list-disc">
             <li>
-              Extracted and Cleaned 40K+ payment and invoice records using SQL for analytics
+              Extracted and Cleaned 40K+ payment and invoice records using SQL from Snowflake
             </li>
             <li>
-              Identified regional operation risks through Python-based geographic and EDA analysis
+              Identified issue cases patterns and validation metrics through Python-based analysis
             </li>
             <li>
-              Built a Tableau dashboard to automate month-end risk and performance monitoring
+              Built a Tableau dashboard to automate month-end issue cases monitoring
             </li>
              <li>
               Impact: +33% data reliability, −20% coordination effort, supporting on-time R2R close
@@ -96,7 +96,7 @@ export const RESUME_DATA: ResumeData = {
               Extracted and processed 45K+ SKU-level sales and inventory records using SQL
             </li>
             <li>
-              Utilized Python to analyze demand stability and select products with stable and sufficient demand for modeling
+              Utilized Python to analyze historical sales and grouped products based on demand stability and variance
             </li>
             <li>
               Built Holt–Winters forecasts (~12% MAPE) to support monthly sales planning with Ops
@@ -136,7 +136,7 @@ export const RESUME_DATA: ResumeData = {
               Identified key design-preference drivers among the 2 segments via multivariate regression
             </li>
              <li>
-              Delivered segment-level insights to support advertising decisions that increased conversion rates by 13%
+              Delivered segment-level insights to support marketing decisions that increased conversion rates by 13%
             </li>
           </ul>
         </>
